@@ -14,6 +14,9 @@
 		FA7ED2BF2B47954F006CDA9F /* WeeksTopImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2BE2B47954F006CDA9F /* WeeksTopImagesTests.swift */; };
 		FA7ED2C92B47954F006CDA9F /* WeeksTopImagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2C82B47954F006CDA9F /* WeeksTopImagesUITests.swift */; };
 		FA7ED2CB2B47954F006CDA9F /* WeeksTopImagesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2CA2B47954F006CDA9F /* WeeksTopImagesUITestsLaunchTests.swift */; };
+		FA7ED2DC2B47E5DD006CDA9F /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2DB2B47E5DD006CDA9F /* ImageService.swift */; };
+		FA7ED2DE2B47E5F7006CDA9F /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2DD2B47E5F7006CDA9F /* ImageModel.swift */; };
+		FA7ED2E02B47E6C5006CDA9F /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2DF2B47E6C5006CDA9F /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		FA7ED2C42B47954F006CDA9F /* WeeksTopImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeeksTopImagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7ED2C82B47954F006CDA9F /* WeeksTopImagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksTopImagesUITests.swift; sourceTree = "<group>"; };
 		FA7ED2CA2B47954F006CDA9F /* WeeksTopImagesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksTopImagesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA7ED2DB2B47E5DD006CDA9F /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		FA7ED2DD2B47E5F7006CDA9F /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		FA7ED2DF2B47E6C5006CDA9F /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 		FA7ED2AC2B47954D006CDA9F /* WeeksTopImages */ = {
 			isa = PBXGroup;
 			children = (
+				FA7ED2DA2B47E336006CDA9F /* Utilities */,
+				FA7ED2D92B47E2B7006CDA9F /* Models */,
+				FA7ED2D82B47E29F006CDA9F /* Services */,
+				FA7ED2D72B47E230006CDA9F /* Views */,
 				FA7ED2AD2B47954D006CDA9F /* WeeksTopImagesApp.swift */,
-				FA7ED2AF2B47954D006CDA9F /* ContentView.swift */,
 				FA7ED2B12B47954E006CDA9F /* Assets.xcassets */,
 				FA7ED2B32B47954E006CDA9F /* Preview Content */,
 			);
@@ -125,6 +134,38 @@
 				FA7ED2CA2B47954F006CDA9F /* WeeksTopImagesUITestsLaunchTests.swift */,
 			);
 			path = WeeksTopImagesUITests;
+			sourceTree = "<group>";
+		};
+		FA7ED2D72B47E230006CDA9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED2AF2B47954D006CDA9F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA7ED2D82B47E29F006CDA9F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED2DB2B47E5DD006CDA9F /* ImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA7ED2D92B47E2B7006CDA9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED2DD2B47E5F7006CDA9F /* ImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7ED2DA2B47E336006CDA9F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED2DF2B47E6C5006CDA9F /* DateFormatter.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +300,9 @@
 			files = (
 				FA7ED2B02B47954D006CDA9F /* ContentView.swift in Sources */,
 				FA7ED2AE2B47954D006CDA9F /* WeeksTopImagesApp.swift in Sources */,
+				FA7ED2DC2B47E5DD006CDA9F /* ImageService.swift in Sources */,
+				FA7ED2DE2B47E5F7006CDA9F /* ImageModel.swift in Sources */,
+				FA7ED2E02B47E6C5006CDA9F /* DateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
