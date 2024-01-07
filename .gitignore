@@ -2,6 +2,9 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+## Ignore .config.plist since it stores sensitive info like api-keys
+.appconfig.plist
+
 ## User settings
 xcuserdata/
 

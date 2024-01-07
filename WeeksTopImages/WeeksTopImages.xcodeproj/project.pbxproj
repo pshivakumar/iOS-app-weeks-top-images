@@ -11,12 +11,15 @@
 		FA7ED2B02B47954D006CDA9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2AF2B47954D006CDA9F /* ContentView.swift */; };
 		FA7ED2B22B47954E006CDA9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7ED2B12B47954E006CDA9F /* Assets.xcassets */; };
 		FA7ED2B52B47954E006CDA9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7ED2B42B47954E006CDA9F /* Preview Assets.xcassets */; };
-		FA7ED2BF2B47954F006CDA9F /* WeeksTopImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2BE2B47954F006CDA9F /* WeeksTopImagesTests.swift */; };
 		FA7ED2C92B47954F006CDA9F /* WeeksTopImagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2C82B47954F006CDA9F /* WeeksTopImagesUITests.swift */; };
 		FA7ED2CB2B47954F006CDA9F /* WeeksTopImagesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2CA2B47954F006CDA9F /* WeeksTopImagesUITestsLaunchTests.swift */; };
-		FA7ED2DC2B47E5DD006CDA9F /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2DB2B47E5DD006CDA9F /* ImageService.swift */; };
+		FA7ED2DC2B47E5DD006CDA9F /* GallerySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2DB2B47E5DD006CDA9F /* GallerySearchService.swift */; };
 		FA7ED2DE2B47E5F7006CDA9F /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2DD2B47E5F7006CDA9F /* ImageModel.swift */; };
 		FA7ED2E02B47E6C5006CDA9F /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2DF2B47E6C5006CDA9F /* DateFormatter.swift */; };
+		FA7ED2E32B4AD06E006CDA9F /* GallerySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2E22B4AD06E006CDA9F /* GallerySearchService.swift */; };
+		FA7ED2E52B4ADDBC006CDA9F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2E42B4ADDBC006CDA9F /* AppConfig.swift */; };
+		FA7ED2E72B4AE1E4006CDA9F /* GallerySearchService+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2E62B4AE1E4006CDA9F /* GallerySearchService+Config.swift */; };
+		FA7ED2E92B4AEDC9006CDA9F /* .appconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7ED2E82B4AEDC9006CDA9F /* .appconfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +46,16 @@
 		FA7ED2B12B47954E006CDA9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7ED2B42B47954E006CDA9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA7ED2BA2B47954F006CDA9F /* WeeksTopImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeeksTopImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA7ED2BE2B47954F006CDA9F /* WeeksTopImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksTopImagesTests.swift; sourceTree = "<group>"; };
 		FA7ED2C42B47954F006CDA9F /* WeeksTopImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeeksTopImagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7ED2C82B47954F006CDA9F /* WeeksTopImagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksTopImagesUITests.swift; sourceTree = "<group>"; };
 		FA7ED2CA2B47954F006CDA9F /* WeeksTopImagesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksTopImagesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FA7ED2DB2B47E5DD006CDA9F /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		FA7ED2DB2B47E5DD006CDA9F /* GallerySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchService.swift; sourceTree = "<group>"; };
 		FA7ED2DD2B47E5F7006CDA9F /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		FA7ED2DF2B47E6C5006CDA9F /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		FA7ED2E22B4AD06E006CDA9F /* GallerySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchService.swift; sourceTree = "<group>"; };
+		FA7ED2E42B4ADDBC006CDA9F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		FA7ED2E62B4AE1E4006CDA9F /* GallerySearchService+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GallerySearchService+Config.swift"; sourceTree = "<group>"; };
+		FA7ED2E82B4AEDC9006CDA9F /* .appconfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = .appconfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 				FA7ED2AD2B47954D006CDA9F /* WeeksTopImagesApp.swift */,
 				FA7ED2B12B47954E006CDA9F /* Assets.xcassets */,
 				FA7ED2B32B47954E006CDA9F /* Preview Content */,
+				FA7ED2E82B4AEDC9006CDA9F /* .appconfig.plist */,
 			);
 			path = WeeksTopImages;
 			sourceTree = "<group>";
@@ -122,7 +129,7 @@
 		FA7ED2BD2B47954F006CDA9F /* WeeksTopImagesTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA7ED2BE2B47954F006CDA9F /* WeeksTopImagesTests.swift */,
+				FA7ED2E12B4AD01F006CDA9F /* Services */,
 			);
 			path = WeeksTopImagesTests;
 			sourceTree = "<group>";
@@ -147,7 +154,8 @@
 		FA7ED2D82B47E29F006CDA9F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FA7ED2DB2B47E5DD006CDA9F /* ImageService.swift */,
+				FA7ED2DB2B47E5DD006CDA9F /* GallerySearchService.swift */,
+				FA7ED2E62B4AE1E4006CDA9F /* GallerySearchService+Config.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -164,8 +172,17 @@
 			isa = PBXGroup;
 			children = (
 				FA7ED2DF2B47E6C5006CDA9F /* DateFormatter.swift */,
+				FA7ED2E42B4ADDBC006CDA9F /* AppConfig.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FA7ED2E12B4AD01F006CDA9F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED2E22B4AD06E006CDA9F /* GallerySearchService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +256,7 @@
 					};
 					FA7ED2B92B47954F006CDA9F = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 						TestTargetID = FA7ED2A92B47954D006CDA9F;
 					};
 					FA7ED2C32B47954F006CDA9F = {
@@ -272,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7ED2E92B4AEDC9006CDA9F /* .appconfig.plist in Resources */,
 				FA7ED2B52B47954E006CDA9F /* Preview Assets.xcassets in Resources */,
 				FA7ED2B22B47954E006CDA9F /* Assets.xcassets in Resources */,
 			);
@@ -300,7 +319,9 @@
 			files = (
 				FA7ED2B02B47954D006CDA9F /* ContentView.swift in Sources */,
 				FA7ED2AE2B47954D006CDA9F /* WeeksTopImagesApp.swift in Sources */,
-				FA7ED2DC2B47E5DD006CDA9F /* ImageService.swift in Sources */,
+				FA7ED2DC2B47E5DD006CDA9F /* GallerySearchService.swift in Sources */,
+				FA7ED2E72B4AE1E4006CDA9F /* GallerySearchService+Config.swift in Sources */,
+				FA7ED2E52B4ADDBC006CDA9F /* AppConfig.swift in Sources */,
 				FA7ED2DE2B47E5F7006CDA9F /* ImageModel.swift in Sources */,
 				FA7ED2E02B47E6C5006CDA9F /* DateFormatter.swift in Sources */,
 			);
@@ -310,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7ED2BF2B47954F006CDA9F /* WeeksTopImagesTests.swift in Sources */,
+				FA7ED2E32B4AD06E006CDA9F /* GallerySearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +540,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -527,6 +549,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiva-kumar.app.weekstopimages.WeeksTopImagesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeeksTopImages.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeeksTopImages";
@@ -538,6 +561,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
