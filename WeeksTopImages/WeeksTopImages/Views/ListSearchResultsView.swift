@@ -13,10 +13,7 @@ struct ListSearchResultsView: View {
     
     var body: some View {
         if results.count == 0 {
-            Text("No Images to display. Enter a search text")
-                .padding()
-                .font(.title3)
-                .opacity(0.6)
+            NoImagePlaceHolderView()
         }else {
             List(results, id: \.id ) { imagemodel in
                 ImageCell(result: imagemodel, isListMode: isListMode)

@@ -5,9 +5,9 @@
 
 - 🔍 Search for the top images of the week from the Imgur gallery.
 - 📷 Display search results in a list or grid view.
-- 🔄 Display search result in reverse chronological order
+- 📅 Display search result in reverse chronological order
 - 🖼️ View detailed information for each image, including title, date, and number of additional images if available.
-- Toggle between list and grid views for a personalized experience.
+- 🔄 Toggle between list and grid views for a personalized experience.
 
 ## ScreenShots
 

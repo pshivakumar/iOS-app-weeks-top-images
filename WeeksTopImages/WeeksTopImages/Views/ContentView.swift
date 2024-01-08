@@ -20,7 +20,6 @@ struct ContentView: View {
                 SearchBar(text: $searchText, onSearchButtonClicked: {
                     viewModel.searchImageGallery(searchText: searchText)
                 })
-                .padding()
                 .frame(height: 50)
 
                 Divider()
