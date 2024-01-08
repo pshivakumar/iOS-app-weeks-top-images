@@ -12,9 +12,9 @@
 ## ScreenShots
 
 <div align="center">
-   <img src="ScreenShots/grid_view.png" alt="Grid View" width="200" style="margin-right: 80px;"/>
-   <img src="ScreenShots/list_view.png" alt="List View" width="200" style="margin-right: 80px;"/>
-   <img src="ScreenShots/no_images_to_display.png" alt="List View" width="200" style="margin-right: 80px;"/>
+   <img src="ScreenShots/grid_view.png" alt="Grid View" width="200" style="margin-right: 80px; border: 2px solid pink;"/>
+   <img src="ScreenShots/list_view.png" alt="List View" width="200" style="margin-right: 80px; border: 2px solid pink;"/>
+   <img src="ScreenShots/no_images_to_display.png" alt="List View" width="200" style="margin-right: 80px; border: 2px solid pink;"/>
 </div>
 
 
