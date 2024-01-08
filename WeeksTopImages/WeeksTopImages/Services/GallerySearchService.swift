@@ -20,7 +20,7 @@ class GallerySearchService {
         }
 
         let fileTypesString = fileTypes.joined(separator: ",")
-        let url = URL(string: "https://api.imgur.com/3/gallery/search/?q=\(query)&time=week&q_type=\(fileTypesString)")
+        let url = URL(string: "https://api.imgur.com/3/gallery/search/?q=\(query)&time=week&q_type=\(fileTypesString)&sort=time&order=desc")
         guard let url = url else {
             completion(nil, NSError(domain: "Invalid url", code: 0, userInfo: nil))
             return
