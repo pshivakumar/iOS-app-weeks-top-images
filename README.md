@@ -1,12 +1,12 @@
-# Weeks Top Images on Imgur
+# Weeks Top Images on Imgur 📸
 **WeeksTopImages**: Your go-to iOS app for discovering and exploring the week's top Imgur gallery images list.
 
 ## Features
 
-- Search for the top images of the week from the Imgur gallery.
-- Display search results in a list or grid view.
-- Display search result in reverse chronological order
-- View detailed information for each image, including title, date, and number of additional images if available.
+- 🔍 Search for the top images of the week from the Imgur gallery.
+- 📷 Display search results in a list or grid view.
+- 🔄 Display search result in reverse chronological order
+- 🖼️ View detailed information for each image, including title, date, and number of additional images if available.
 - Toggle between list and grid views for a personalized experience.
 
 ## ScreenShots
@@ -17,7 +17,7 @@
 </div>
 
 
-## Getting Started
+## Getting Started 🚀
 
 Follow the steps below to set up and run the WeeksTopImages app locally.
 
@@ -58,6 +58,19 @@ Follow the steps below to set up and run the WeeksTopImages app locally.
    -  Toggle between list and grid views using the provided switch.
    -  View detailed information for each image on the image cell.
       
-###  Testing
+### Testing
 
    Unit tests are included in the WeeksTopImagesTests folder. Use XCTest to run the tests and ensure the app's functionality.
+
+## Dependencies
+
+The project uses following external dependencies
+   1. [**ViewInspector**](https://github.com/nalexn/ViewInspector) is a library for unit testing SwiftUI views.
+   2. [**URLImage**](https://github.com/dmytro-anokhin/url-image) manages downloading remote image and caching it locally, both in memory and on disk, for you.
+
+## Future Improvements
+
+The following improvements needs to be taken up
+   1. Improve the user experience
+   2. Improve the unit test coverage to 90%
+   3. Improve the UI test coverage
