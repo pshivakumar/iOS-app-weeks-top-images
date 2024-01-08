@@ -12,8 +12,9 @@
 ## ScreenShots
 
 <div align="center">
-   <img src="ScreenShots/grid_view.png" alt="Grid View" width="200" style="margin-right: 40px;"/>
-   <img src="ScreenShots/list_view.png" alt="List View" width="200"/>
+   <img src="ScreenShots/grid_view.png" alt="Grid View" width="200" style="margin-right: 80px;"/>
+   <img src="ScreenShots/list_view.png" alt="List View" width="200" style="margin-right: 80px;"/>
+   <img src="ScreenShots/no_images_to_display.png" alt="List View" width="200" style="margin-right: 80px;"/>
 </div>
 
 
