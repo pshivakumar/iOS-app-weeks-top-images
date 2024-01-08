@@ -12,8 +12,8 @@
 ## ScreenShots
 
 <div align="center">
-   <img src="screenshots/grid_view.png" alt="Grid View" width="200" style="margin-right: 40px;"/>
-   <img src="screenshots/list_view.png" alt="List View" width="200"/>
+   <img src="ScreenShots/grid_view.png" alt="Grid View" width="200" style="margin-right: 40px;"/>
+   <img src="ScreenShots/list_view.png" alt="List View" width="200"/>
 </div>
 
 
@@ -40,7 +40,7 @@ Follow the steps below to set up and run the WeeksTopImages app locally.
    4. Add the following in the **.appconfig.plist** file.
 
          <div align="center">
-            <img src="screenshots/appconfig_example.png" alt="App Config Plist" width="400"/>
+            <img src="ScreenShots/appconfig_example.png" alt="App Config Plist" width="400"/>
          </div>
    6. Your can register your app and get the client id from here https://api.imgur.com/oauth2/addclient
    5. Make sure the following line is included in .gitignore file, if not included already
