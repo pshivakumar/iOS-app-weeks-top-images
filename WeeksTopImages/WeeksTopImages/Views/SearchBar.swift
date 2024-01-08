@@ -14,7 +14,7 @@ struct SearchBar: View {
     var body: some View {
         HStack {
             TextField("Search the Gallery", text: $text)
-                .padding(10)
+                .padding(8)
                 .background(Color(.systemGray6))
                 .cornerRadius(8)
             
@@ -25,6 +25,7 @@ struct SearchBar: View {
             .font(.title)
 
         } //: HSTACK
+        .padding(8)
     }
 }
 

@@ -17,8 +17,7 @@ struct ListSearchResultsView: View {
         }else {
             List(results, id: \.id ) { imagemodel in
                 ImageCell(result: imagemodel, isListMode: isListMode)
-            }
-
+            }.listStyle(.plain)
         }
     }
 }
