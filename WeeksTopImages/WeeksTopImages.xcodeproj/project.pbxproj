@@ -20,6 +20,12 @@
 		FA7ED2E52B4ADDBC006CDA9F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2E42B4ADDBC006CDA9F /* AppConfig.swift */; };
 		FA7ED2E72B4AE1E4006CDA9F /* GallerySearchService+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2E62B4AE1E4006CDA9F /* GallerySearchService+Config.swift */; };
 		FA7ED2E92B4AEDC9006CDA9F /* .appconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7ED2E82B4AEDC9006CDA9F /* .appconfig.plist */; };
+		FA7ED2ED2B4AFD1D006CDA9F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2EC2B4AFD1D006CDA9F /* SearchBar.swift */; };
+		FA7ED2EF2B4B02CD006CDA9F /* ListSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2EE2B4B02CD006CDA9F /* ListSearchResultsView.swift */; };
+		FA7ED2F12B4B02E7006CDA9F /* GridSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2F02B4B02E7006CDA9F /* GridSearchResultsView.swift */; };
+		FA7ED2F42B4B076A006CDA9F /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2F32B4B076A006CDA9F /* ImageCell.swift */; };
+		FA7ED2F72B4BA252006CDA9F /* ImageCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2F62B4BA252006CDA9F /* ImageCellTests.swift */; };
+		FA7ED2FA2B4BA88B006CDA9F /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = FA7ED2F92B4BA88B006CDA9F /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,11 @@
 		FA7ED2E42B4ADDBC006CDA9F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		FA7ED2E62B4AE1E4006CDA9F /* GallerySearchService+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GallerySearchService+Config.swift"; sourceTree = "<group>"; };
 		FA7ED2E82B4AEDC9006CDA9F /* .appconfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = .appconfig.plist; sourceTree = "<group>"; };
+		FA7ED2EC2B4AFD1D006CDA9F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FA7ED2EE2B4B02CD006CDA9F /* ListSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSearchResultsView.swift; sourceTree = "<group>"; };
+		FA7ED2F02B4B02E7006CDA9F /* GridSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSearchResultsView.swift; sourceTree = "<group>"; };
+		FA7ED2F32B4B076A006CDA9F /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		FA7ED2F62B4BA252006CDA9F /* ImageCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7ED2FA2B4BA88B006CDA9F /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +121,7 @@
 				FA7ED2DA2B47E336006CDA9F /* Utilities */,
 				FA7ED2D92B47E2B7006CDA9F /* Models */,
 				FA7ED2D82B47E29F006CDA9F /* Services */,
+				FA7ED2F22B4B0711006CDA9F /* Components */,
 				FA7ED2D72B47E230006CDA9F /* Views */,
 				FA7ED2AD2B47954D006CDA9F /* WeeksTopImagesApp.swift */,
 				FA7ED2B12B47954E006CDA9F /* Assets.xcassets */,
@@ -129,6 +142,7 @@
 		FA7ED2BD2B47954F006CDA9F /* WeeksTopImagesTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA7ED2F52B4BA21F006CDA9F /* Components */,
 				FA7ED2E12B4AD01F006CDA9F /* Services */,
 			);
 			path = WeeksTopImagesTests;
@@ -147,6 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				FA7ED2AF2B47954D006CDA9F /* ContentView.swift */,
+				FA7ED2EC2B4AFD1D006CDA9F /* SearchBar.swift */,
+				FA7ED2EE2B4B02CD006CDA9F /* ListSearchResultsView.swift */,
+				FA7ED2F02B4B02E7006CDA9F /* GridSearchResultsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +202,22 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FA7ED2F22B4B0711006CDA9F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED2F32B4B076A006CDA9F /* ImageCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA7ED2F52B4BA21F006CDA9F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA7ED2F62B4BA252006CDA9F /* ImageCellTests.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +252,9 @@
 				FA7ED2BC2B47954F006CDA9F /* PBXTargetDependency */,
 			);
 			name = WeeksTopImagesTests;
+			packageProductDependencies = (
+				FA7ED2F92B4BA88B006CDA9F /* ViewInspector */,
+			);
 			productName = WeeksTopImagesTests;
 			productReference = FA7ED2BA2B47954F006CDA9F /* WeeksTopImagesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -274,6 +310,9 @@
 				Base,
 			);
 			mainGroup = FA7ED2A12B47954D006CDA9F;
+			packageReferences = (
+				FA7ED2F82B4BA88B006CDA9F /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = FA7ED2AB2B47954D006CDA9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,11 +358,15 @@
 			files = (
 				FA7ED2B02B47954D006CDA9F /* ContentView.swift in Sources */,
 				FA7ED2AE2B47954D006CDA9F /* WeeksTopImagesApp.swift in Sources */,
+				FA7ED2F42B4B076A006CDA9F /* ImageCell.swift in Sources */,
 				FA7ED2DC2B47E5DD006CDA9F /* GallerySearchService.swift in Sources */,
 				FA7ED2E72B4AE1E4006CDA9F /* GallerySearchService+Config.swift in Sources */,
 				FA7ED2E52B4ADDBC006CDA9F /* AppConfig.swift in Sources */,
+				FA7ED2ED2B4AFD1D006CDA9F /* SearchBar.swift in Sources */,
+				FA7ED2EF2B4B02CD006CDA9F /* ListSearchResultsView.swift in Sources */,
 				FA7ED2DE2B47E5F7006CDA9F /* ImageModel.swift in Sources */,
 				FA7ED2E02B47E6C5006CDA9F /* DateFormatter.swift in Sources */,
+				FA7ED2F12B4B02E7006CDA9F /* GridSearchResultsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7ED2E32B4AD06E006CDA9F /* GallerySearchService.swift in Sources */,
+				FA7ED2F72B4BA252006CDA9F /* ImageCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +694,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA7ED2F82B4BA88B006CDA9F /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA7ED2F92B4BA88B006CDA9F /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7ED2F82B4BA88B006CDA9F /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA7ED2A22B47954D006CDA9F /* Project object */;
 }

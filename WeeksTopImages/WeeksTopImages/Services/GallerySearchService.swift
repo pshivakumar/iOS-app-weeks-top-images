@@ -10,13 +10,17 @@ import Foundation
 class GallerySearchService {
     static let shared = GallerySearchService()
     private let apiKey: String? = nil
-    
+    private let fileTypes = ["jpg", "png"]  // Add other file types as needed
+
+
     func searchImages(query: String, completion: @escaping ([ImageModel]?, Error?) -> Void) {
         guard let apiKey = GallerySearchService.loadConfig().value(for: "IMGUR_API_KEY") else {
             completion(nil,NSError(domain: "Cannot find the Imgur API Key(Client id)", code: 0, userInfo: nil) )
             return
         }
-        let url = URL(string: "https://api.imgur.com/3/gallery/search/?q=\(query)&time=week")
+
+        let fileTypesString = fileTypes.joined(separator: ",")
+        let url = URL(string: "https://api.imgur.com/3/gallery/search/?q=\(query)&time=week&q_type=\(fileTypesString)")
         guard let url = url else {
             completion(nil, NSError(domain: "Invalid url", code: 0, userInfo: nil))
             return

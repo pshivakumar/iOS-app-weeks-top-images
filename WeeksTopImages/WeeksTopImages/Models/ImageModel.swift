@@ -8,12 +8,13 @@
 import Foundation
 
 struct ImageModel: Decodable {
+    let id: String
     let title: String
     let datetime: TimeInterval
-    let images: [Image]?
+    let images: [ImageDetail]?
 }
 
-struct Image: Decodable {
+struct ImageDetail: Decodable {
     let link: URL
 }
 
