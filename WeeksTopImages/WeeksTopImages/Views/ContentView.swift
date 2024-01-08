@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import URLImage
+import URLImageStore
 
 struct ContentView: View {
     @State private var searchText = ""
@@ -20,19 +22,7 @@ struct ContentView: View {
                 })
                 .padding()
                 .frame(height: 50)
-                
-                //                Divider()
-                //
-                //                Toggle(isOn: $isListMode, label: {
-                //                    if isListMode{
-                //                        Text("List View")
-                //                    }else {
-                //                        Text("Grid View")
-                //                    }
-                //                })
-                //                .padding()
-                //                .frame(height: 40)
-                
+
                 Divider()
                 Spacer()
                 

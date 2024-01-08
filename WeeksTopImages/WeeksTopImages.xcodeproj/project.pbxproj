@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA759C152B4BED8C00CB54BE /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA759C142B4BED8C00CB54BE /* URLImage */; };
+		FA759C172B4BED8C00CB54BE /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = FA759C162B4BED8C00CB54BE /* URLImageStore */; };
 		FA7ED2AE2B47954D006CDA9F /* WeeksTopImagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2AD2B47954D006CDA9F /* WeeksTopImagesApp.swift */; };
 		FA7ED2B02B47954D006CDA9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ED2AF2B47954D006CDA9F /* ContentView.swift */; };
 		FA7ED2B22B47954E006CDA9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7ED2B12B47954E006CDA9F /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA759C172B4BED8C00CB54BE /* URLImageStore in Frameworks */,
+				FA759C152B4BED8C00CB54BE /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +238,10 @@
 			dependencies = (
 			);
 			name = WeeksTopImages;
+			packageProductDependencies = (
+				FA759C142B4BED8C00CB54BE /* URLImage */,
+				FA759C162B4BED8C00CB54BE /* URLImageStore */,
+			);
 			productName = WeeksTopImages;
 			productReference = FA7ED2AA2B47954D006CDA9F /* WeeksTopImages.app */;
 			productType = "com.apple.product-type.application";
@@ -312,6 +320,7 @@
 			mainGroup = FA7ED2A12B47954D006CDA9F;
 			packageReferences = (
 				FA7ED2F82B4BA88B006CDA9F /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				FA759C132B4BED8C00CB54BE /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = FA7ED2AB2B47954D006CDA9F /* Products */;
 			projectDirPath = "";
@@ -696,6 +705,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA759C132B4BED8C00CB54BE /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
 		FA7ED2F82B4BA88B006CDA9F /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nalexn/ViewInspector";
@@ -707,6 +724,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA759C142B4BED8C00CB54BE /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA759C132B4BED8C00CB54BE /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		FA759C162B4BED8C00CB54BE /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA759C132B4BED8C00CB54BE /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
 		FA7ED2F92B4BA88B006CDA9F /* ViewInspector */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA7ED2F82B4BA88B006CDA9F /* XCRemoteSwiftPackageReference "ViewInspector" */;

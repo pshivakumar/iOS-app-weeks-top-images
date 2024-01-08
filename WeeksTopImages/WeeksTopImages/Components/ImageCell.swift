@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct ImageCell: View {
     let result: ImageModel
@@ -31,38 +32,55 @@ struct ImageCell: View {
 @ViewBuilder
 private func listModeContent(_ result: ImageModel) -> some View {
     HStack {
-        AsyncImage(url: result.images?.first?.link) { phase in
-            switch phase {
-            case .empty:
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 80, height: 80)
-                    .cornerRadius(8)
+        if let url = result.images?.first?.link {
+            URLImage(url) { image, _ in
 
-            case .success(let image):
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 80, height: 80)
-                    .cornerRadius(8)
-
-            case .failure:
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 80, height: 80)
-                    .cornerRadius(8)
-                    .foregroundColor(.gray)
-            @unknown default:
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 80, height: 80)
-                    .cornerRadius(8)
-                    .foregroundColor(.gray)
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 80, height: 80)
+                        .cornerRadius(8)
             }
+        }else {
+            Image(systemName: "photo")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 80, height: 80)
+                .cornerRadius(8)
+                .foregroundColor(.gray)
         }
+//        AsyncImage(url: result.images?.first?.link) { phase in
+//            switch phase {
+//            case .empty:
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 80, height: 80)
+//                    .cornerRadius(8)
+//
+//            case .success(let image):
+//                image
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 80, height: 80)
+//                    .cornerRadius(8)
+//
+//            case .failure:
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 80, height: 80)
+//                    .cornerRadius(8)
+//                    .foregroundColor(.gray)
+//            @unknown default:
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 80, height: 80)
+//                    .cornerRadius(8)
+//                    .foregroundColor(.gray)
+//            }
+//        }
         VStack {
             Text(result.title)
                 .font(.headline)
@@ -104,38 +122,56 @@ private func listModeContent(_ result: ImageModel) -> some View {
 @ViewBuilder
 private func gridModeContent(_ result: ImageModel) -> some View {
     VStack {
-        AsyncImage(url: result.images?.first?.link) { phase in
-            switch phase {
-            case .empty:
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(8)
+        
+        if let url = result.images?.first?.link {
+            URLImage(url) { image, _ in
 
-            case .success(let image):
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(8)
-
-            case .failure:
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(8)
-                    .foregroundColor(.gray)
-            @unknown default:
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(8)
-                    .foregroundColor(.gray)
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 120, height: 120)
+                        .cornerRadius(8)
             }
+        }else {
+            Image(systemName: "photo")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 120, height: 120)
+                .cornerRadius(8)
+                .foregroundColor(.gray)
         }
+//        AsyncImage(url: result.images?.first?.link) { phase in
+//            switch phase {
+//            case .empty:
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 120, height: 120)
+//                    .cornerRadius(8)
+//
+//            case .success(let image):
+//                image
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 120, height: 120)
+//                    .cornerRadius(8)
+//
+//            case .failure:
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 120, height: 120)
+//                    .cornerRadius(8)
+//                    .foregroundColor(.gray)
+//            @unknown default:
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 120, height: 120)
+//                    .cornerRadius(8)
+//                    .foregroundColor(.gray)
+//            }
+//        }
         VStack {
             Text(result.title)
                 .font(.subheadline)
